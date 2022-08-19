@@ -61,13 +61,26 @@ public class getBorder {
         }
         return y;
     }
+    public static int getWidth() throws AWTException {
+        int width;
+        int n1 = getBorderXup(),
+            n2 = getBorderXdown();
+        width = n2 - n1;
+        return width;
+    }
+
+    public static int getHeight() throws AWTException {
+        int height;
+        int n1 = getBorderYup(),
+                n2 = getBorderYdown();
+        height = n2 - n1;
+        return height;
+    }
 
     public static Rectangle getRectangle() throws AWTException {
         int x1=getBorderXup(),
-            x2=getBorderXdown(),
-            y1=getBorderYup(),
-            y2=getBorderYdown();
-        Rectangle rectangle = new Rectangle(x1,y1,x2,y2);
+            y1=getBorderYup();
+        Rectangle rectangle = new Rectangle(x1,y1,getWidth()+1,getHeight()+1);
         return rectangle;
     }
 }
