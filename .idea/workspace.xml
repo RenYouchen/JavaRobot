@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56896e4d-11d6-418b-a3ee-662e420dd8e0" name="Changes" comment="fix">
+    <list default="true" id="56896e4d-11d6-418b-a3ee-662e420dd8e0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/getBorder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/getBorder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,8 +73,17 @@
       <workItem from="1660827785624" duration="319000" />
       <workItem from="1660828221078" duration="2540000" />
       <workItem from="1660893452831" duration="557000" />
-      <workItem from="1660894950266" duration="3487000" />
+      <workItem from="1660894950266" duration="3768000" />
+      <workItem from="1660899432130" duration="617000" />
     </task>
+    <task id="LOCAL-00001" summary="fix Rectangle">
+      <created>1660898585058</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660898585058</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +102,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="fix Rectangle" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix Rectangle" />
   </component>
 </project>
