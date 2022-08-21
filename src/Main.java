@@ -11,6 +11,9 @@ public class Main {
         Rectangle rectangle = getBorder.getRectangle();
         BufferedImage screen =
         bot.createScreenCapture(rectangle);
-        ImageIO.write(screen,"jpg",new File("test.jpg"));
+        ImageIO.write(screen,"jpg",new File("test1.jpg"));
+//        int x = getBorder.getBorderXdown(),
+//            y = getBorder.getBorderYdown();
+//        bot.mouseMove(x,y);
     }
 }
