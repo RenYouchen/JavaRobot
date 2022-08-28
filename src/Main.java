@@ -8,11 +8,11 @@ import opencv.opencv;
 
 public class Main {
     public static void main(String[] args) throws IOException, AWTException, InterruptedException {
+        opencv.init();
 //        Robot bot = new Robot();
-//        Rectangle rectangle = getBorder.getRectangle();
+//        Rectangle rectangle = getBorderInfo.getRectangle();
 //        BufferedImage screen =
 //        bot.createScreenCapture(rectangle);
 //        ImageIO.write(screen,"jpg",new File("test1.jpg"));
-        opencv.init();
     }
 }

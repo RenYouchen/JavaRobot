@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class getBorder {
+public class getBorderInfo {
     static Robot bot;
 
     static {
@@ -78,9 +78,10 @@ public class getBorder {
     }
 
     public static Rectangle getRectangle() throws AWTException {
-        int x1=getBorderXup(),
-            y1=getBorderYup();
-        Rectangle rectangle = new Rectangle(x1,y1,getWidth()+1,getHeight()+1);
-        return rectangle;
+        int x = getBorderXup(),
+                y = getBorderYup(),
+                width = getWidth(),
+                height = getHeight();
+        return new Rectangle(x, y, width, height);
     }
 }
