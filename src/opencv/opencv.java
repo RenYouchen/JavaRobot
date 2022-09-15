@@ -14,24 +14,19 @@ import java.net.MalformedURLException;
 import static org.opencv.highgui.HighGui.*;
 import static org.opencv.imgcodecs.Imgcodecs.IMREAD_GRAYSCALE;
 import static org.opencv.imgcodecs.Imgcodecs.imread;
-import static org.opencv.imgproc.Imgproc.COLOR_BGR2HSV;
-import static org.opencv.imgproc.Imgproc.Canny;
+import static org.opencv.imgproc.Imgproc.*;
 
 public class opencv {
     public static void init() throws MalformedURLException {
         System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
         System.out.println(Core.VERSION);
 
-        namedWindow("hi");
-        resizeWindow("hi",100,100);
-
-        File file = new File("test1.jpg");
-        String path = file.getAbsolutePath();
-        Mat img = imread(path);
-        Mat hsv = new Mat();
-        Imgproc.cvtColor(img,hsv,COLOR_BGR2HSV);
+        Mat img = imread("test1.bmp");
+        Mat canny = new Mat();
+        Imgproc.cvtColor(img,canny,COLOR_BGR2GRAY);
+//        Imgproc.Canny(img,canny,100,1);
         HighGui.imshow("img",img);
-        HighGui.imshow("canny",hsv);
+        HighGui.imshow("canny",canny);
         waitKey(0);
         System.exit(0);
     }
